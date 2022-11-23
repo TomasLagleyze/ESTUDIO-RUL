@@ -453,7 +453,56 @@ margin-top: 10px;}
 
 
     .grid-container-servicios{display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;}
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;}
 
     .logo-servicios-1{grid-column: 1 / 2;}
 
+    .textos-subservicios1{grid-column: 2 / 3;
+align-self: center;}
+
+
+.logo-servicios-2-ubic{grid-column: 3 / 4;
+    grid-row: 2 / 3;}
+
+.logo-servicios-2{align-self: center;}
+
+.textos-subservicios2{grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    align-self: center;}
+
+.logo-servicios-3-ubic{grid-column: 1 / 2;
+grid-row:  3 / 4;}
+
+.textos-subservicios3{grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: center;}
+
+.logo-servicios-4-ubic{grid-column: 3 / 4;
+grid-row: 4 / 5;
+align-self: center;}
+
+.textos-subservicios4{grid-column: 4 / 5;
+    grid-row: 4 / 5;
+align-self: center;}
+
+
+
+
+            /* CSS QUIENES SOMOS */
+
+        .titulo-quienessomos{font-family: 'Helvetica';
+        margin-bottom: 50px;}
+
+        .parrafo-quienessomos{font-family: 'Helvetica Neue';}
+
+        .container-imagenes-qs{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+        .img-arqui{width: 25%;
+            height: 25%;
+            border-style: solid black;}
