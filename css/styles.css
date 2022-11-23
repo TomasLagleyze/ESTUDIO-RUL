@@ -13,10 +13,19 @@ body{
     flex-direction: column;
     min-height: 100vh;}
 
-    .titulo_principal{font-family: 'Helvetica';}
+    .titulos-introductorios{background-color: black;
+    color: white;}
+
+    .titulo_principal{font-family: 'Helvetica';
+    background-color: black;
+margin: 0px;}
     .titulo_principal2{font-family: 'Helvetica neue';
     letter-spacing: 6px;
-margin-bottom: 20px;}
+background-color: black;
+margin: 0px;
+margin-bottom: 0px;}
+
+.color-nav{background-color: black;}
 
 header{
     font-size: x-large;
@@ -39,10 +48,6 @@ background-color: black;
 margin-top: auto;
 margin-bottom: 0px;}
 
-header{grid-area: header;}
-
-nav{grid-area: nav;}
-
 main{grid-area: main;
 padding: 20px;}
 
@@ -54,8 +59,6 @@ footer{grid-area: footer;}
     gap: 10px;
     display: grid;
     grid-template-areas: 
-    "header"
-    "nav"
     "main"
     "footer" ; }
 
