@@ -13,6 +13,8 @@ body{
     flex-direction: column;
     min-height: 100vh;}
 
+    .colornav{background-color: black;}
+
     .titulos-introductorios{background-color: black;
     color: white;}
 
@@ -332,6 +334,10 @@ flex-direction: row;}
     }
     
     .titulo-secun{color: gray;}
+
+    .animacion:hover{
+        transform: scale(3);
+    }
     
     
     .icon{width: 50px;
@@ -348,8 +354,113 @@ flex-direction: row;}
     }
 
 
+        /* CSS PROYECTOS 0-576 */
 
-/* CSS PROYECTOS */
+            .grilla-main2{
+                background-color: rgba(255, 255, 255, 0.952);
+                height: auto;
+                display: flex;
+            flex-direction: column;}
+            
+            .colornav{background-color: black;}
+            
+            .parrafo-proyecto1-container{align-self: center;}
+            
+            .parrafo-proyecto1{
+            font-size: 75%;}
+            
+            .imagen-proyecto1-container{
+            margin-top: 10px;}
+            
+            .imagen-proyecto1{width: 100%;
+            height: 100%;}
+            
+            .parrafo-proyecto2-container{
+            align-self: center;
+            font-size: 75%;}
+            
+            .imagen-proyecto2{width: 100%;
+            height: 100%;}
+            
+            .parrafo-proyecto3-container{
+            align-self: center;
+            font-size: 75%;}
+            
+            
+            .imagen-proyecto3{width: 100%;
+            height: 100%;}
+            
+            .parrafo-proyecto4-container{
+            align-self: center;
+            margin-right: 10px;
+            font-size: 75%;}
+            
+            .imagen-proyecto4-container{
+            margin-bottom: 10px;}
+            
+            .imagen-proyecto4{width: 100%;
+                height: 100%;}     
+
+
+    /* CSS PROYECTOS 576px */
+
+    @media(min-width:576px){
+
+    .grilla-main2{
+        background-color: rgba(255, 255, 255, 0.952);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    gap: 10px;}
+    
+    .colornav{background-color: black;}
+    
+    .parrafo-proyecto1-container{align-self: center;}
+    
+    .parrafo-proyecto1{
+    font-size: 150%;}
+    
+    .imagen-proyecto1-container{
+    margin-top: 10px;}
+    
+    .imagen-proyecto1{width: 100%;
+    height: 100%;}
+    
+    .parrafo-proyecto2-container{
+    align-self: center;
+    font-size: 300%;}
+    
+    
+    .imagen-proyecto2{width: 100%;
+    height: 100%;}
+    
+    .parrafo-proyecto3-container{
+    align-self: center;
+    font-size: 250%;}
+    
+
+    
+    .imagen-proyecto3{width: 100%;
+    height: 100%;}
+    
+    .parrafo-proyecto4-container{
+    align-self: center;
+    margin-right: 10px;
+    font-size: 175%;}
+    
+    .imagen-proyecto4-container{
+    margin-bottom: 10px;}
+    
+    .imagen-proyecto4{width: 100%;
+        height: 100%;}     }
+
+/* CSS PROYECTOS 1024px*/
+
+@media(min-width:1024px){
+
+.carousel{width: 100%;
+height: 100%;
+margin-bottom: 50px;}
 
 .grilla-main2{
     background-color: rgba(255, 255, 255, 0.952);
@@ -357,6 +468,8 @@ flex-direction: row;}
     display: grid;
 grid-template-columns: 20% 1fr 1fr 1fr 20%;
 gap: 10px;}
+
+.colornav{background-color: black;}
 
 .parrafo-proyecto1-container{align-self: center;}
 
@@ -401,7 +514,7 @@ font-size: 175%;}
 margin-bottom: 10px;}
 
 .imagen-proyecto4{width: 100%;
-    height: 100%;}
+    height: 100%;}     }
 
     /* CSS CONTACTO */
 
@@ -436,7 +549,113 @@ margin-top: 10px;}
     .texto-ubicacion{font-family: 'Helvetica Neue'; margin: 10px;
     font-size: x-large;}
 
-        /* CSS SERVICIOS */
+            /* CSS SERVICIOS 0-500px */
+
+
+                .intro-servicios{display: flex;
+                    flex-direction: column;
+                align-items: center;}
+            
+                    .titulo-servicios{font-family: 'Helvetica Neue';
+                    font-size: x-large;
+                margin-bottom: 20px;}
+            
+                    .parrafo-servicios{width: 500px;}
+            
+                    .titulo-servicios2{font-family: 'Helvetica Neue';
+                    font-size: x-large;
+                margin: 100px;}
+            
+            
+                .grid-container-servicios{display: flex;
+                flex-direction: column;}
+            
+                .logo-servicios-1{grid-column: 1 / 2;}
+            
+                .textos-subservicios1{grid-column: 2 / 3;
+            align-self: center;}
+            
+            
+            .logo-servicios-2-ubic{grid-column: 3 / 4;
+                grid-row: 2 / 3;}
+            
+            .logo-servicios-2{align-self: center;}
+            
+            .textos-subservicios2{grid-column: 4 / 5;
+                grid-row: 2 / 3;
+                align-self: center;}
+            
+            .logo-servicios-3-ubic{grid-column: 1 / 2;
+            grid-row:  3 / 4;}
+            
+            .textos-subservicios3{grid-column: 2 / 3;
+                grid-row: 3 / 4;
+                align-self: center;}
+            
+            .logo-servicios-4-ubic{grid-column: 3 / 4;
+            grid-row: 4 / 5;
+            align-self: center;}
+            
+            .textos-subservicios4{grid-column: 4 / 5;
+                grid-row: 4 / 5;
+            align-self: center;} 
+
+        /* CSS SERVICIOS 576px */
+
+        @media(min-width:576px){
+
+        .intro-servicios{display: flex;
+            flex-direction: column;
+        align-items: center;}
+    
+            .titulo-servicios{font-family: 'Helvetica Neue';
+            font-size: x-large;
+        margin-bottom: 20px;}
+    
+            .parrafo-servicios{width: 500px;}
+    
+            .titulo-servicios2{font-family: 'Helvetica Neue';
+            font-size: x-large;
+        margin: 100px;}
+    
+    
+        .grid-container-servicios{display: flex;
+        flex-direction: column;}
+    
+        .logo-servicios-1{grid-column: 1 / 2;}
+    
+        .textos-subservicios1{grid-column: 2 / 3;
+    align-self: center;}
+    
+    
+    .logo-servicios-2-ubic{grid-column: 3 / 4;
+        grid-row: 2 / 3;}
+    
+    .logo-servicios-2{align-self: center;}
+    
+    .textos-subservicios2{grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        align-self: center;}
+    
+    .logo-servicios-3-ubic{grid-column: 1 / 2;
+    grid-row:  3 / 4;}
+    
+    .textos-subservicios3{grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: center;}
+    
+    .logo-servicios-4-ubic{grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    align-self: center;}
+    
+    .textos-subservicios4{grid-column: 4 / 5;
+        grid-row: 4 / 5;
+    align-self: center;} }
+
+
+        /* CSS SERVICIOS 1024px */
+
+        @media(min-width:1024px){
 
         .intro-servicios{display: flex;
         flex-direction: column;
@@ -485,7 +704,7 @@ align-self: center;}
 
 .textos-subservicios4{grid-column: 4 / 5;
     grid-row: 4 / 5;
-align-self: center;}
+align-self: center;} }
 
 
 
