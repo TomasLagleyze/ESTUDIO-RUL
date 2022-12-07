@@ -1,0 +1,1121 @@
+@font-face {
+  font-family: "Cooper";
+  src: url(../fuentes/CooperHewitt-Semibold.ttf);
+}
+@font-face {
+  font-family: "Cooper-Light";
+  src: url(../fuentes/CooperHewitt-Light.ttf);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* CSS HOME 0-576px */
+body {
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.colornav {
+  background-color: black;
+}
+
+.titulos-introductorios {
+  background-color: black;
+  color: white;
+}
+
+.titulo_principal {
+  font-family: "Helvetica";
+  background-color: black;
+  margin: 0px;
+}
+
+.titulo_principal2 {
+  font-family: "Helvetica neue";
+  letter-spacing: 6px;
+  background-color: black;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+.color-nav {
+  background-color: black;
+}
+
+header {
+  font-size: x-large;
+  color: white;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  font-family: "Cooper-Light";
+  color: grey;
+}
+
+nav,
+ul,
+li {
+  list-style-type: none;
+  color: white;
+  font-family: "Helvetica";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  padding: 50px;
+  background-color: black;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grilla-principal {
+  background-color: black;
+  margin-bottom: 1.5rem;
+  gap: 10px;
+  display: grid;
+  grid-template-areas: "main" "footer";
+}
+
+main {
+  background-color: white;
+}
+
+.grilla-main {
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenes-intro {
+  grid-column: 1/4;
+}
+
+.imagen-intro {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-intro1 {
+  grid-column: 1/4;
+  font-size: small;
+}
+
+.texto-intro2 {
+  grid-column: 1/2;
+  align-self: center;
+  font-size: small;
+}
+
+.texto-intro3 {
+  grid-column: 3/4;
+  align-self: center;
+  font-size: small;
+}
+
+.texto-intro4 {
+  grid-column: 1/4;
+  font-size: small;
+}
+
+.titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
+  color: black;
+  font-family: "Cooper";
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contactowapp {
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* CSS HOME 576 EN ADELANTE */
+@media (min-width: 576px) {
+  body {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .titulo_principal {
+    font-family: "Helvetica";
+  }
+  .titulo_principal2 {
+    font-family: "Helvetica neue";
+    letter-spacing: 6px;
+  }
+  header {
+    font-size: x-large;
+    color: white;
+  }
+  h2 {
+    color: black;
+  }
+  p {
+    font-family: "Cooper-Light";
+    color: grey;
+  }
+  nav,
+ul,
+li {
+    list-style-type: none;
+    color: white;
+    font-family: "Helvetica";
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  footer {
+    padding: 50px;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+    padding: 20px;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .grilla-principal {
+    background-color: black;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  main {
+    background-color: white;
+  }
+  .grilla-main {
+    background-color: white;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    gap: 100px;
+    text-align: center;
+  }
+  .imagenes-intro {
+    grid-column: 1/4;
+    margin: 75px;
+  }
+  .imagen-intro {
+    width: 100%;
+    height: 100%;
+  }
+  .texto-intro1 {
+    grid-column: 1/4;
+    font-size: large;
+  }
+  .texto-intro2 {
+    grid-column: 1/2;
+    align-self: flex-start;
+    font-size: large;
+  }
+  .texto-intro3 {
+    grid-column: 3/4;
+    align-self: flex-start;
+    font-size: large;
+  }
+  .texto-intro4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: large;
+  }
+  .titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
+    color: black;
+    font-family: "Cooper";
+  }
+  .animacion:hover {
+    transform: scale(3);
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.contactowapp {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.contactowapp h3 {
+  grid-column: 2/3;
+  justify-content: center;
+}
+.contactowapp p {
+  grid-column: 2/3;
+  justify-content: center;
+}
+.contactowapp a {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: end;
+}
+.contactowapp .logo-whastapp {
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+/* CSS HOME 1024 EN ADELANTE */
+@media (min-width: 1024px) {
+  body {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .titulo_principal {
+    font-family: "Helvetica";
+  }
+  .titulo_principal2 {
+    font-family: "Helvetica neue";
+    letter-spacing: 6px;
+  }
+  header {
+    font-size: x-large;
+    color: white;
+  }
+  h2 {
+    color: black;
+  }
+  p {
+    font-family: "Cooper-Light";
+    color: grey;
+  }
+  nav,
+ul,
+li {
+    list-style-type: none;
+    color: white;
+    font-family: "Helvetica";
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  footer {
+    padding: 50px;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+    padding: 20px;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .grilla-principal {
+    background-color: black;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  main {
+    background-color: white;
+  }
+  .grilla-main {
+    background-color: white;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    text-align: center;
+  }
+  .texto-intro1 {
+    grid-column: 1/4;
+    font-size: x-large;
+    margin-top: 60px;
+  }
+  .texto-intro2 {
+    grid-column: 1/2;
+    align-self: flex-start;
+    font-size: x-large;
+  }
+  .texto-intro3 {
+    grid-column: 3/4;
+    align-self: flex-start;
+    font-size: x-large;
+  }
+  .texto-intro4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: x-large;
+  }
+  .titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
+    color: black;
+    font-family: "Cooper";
+  }
+  .animacion:hover {
+    transform: scale(3);
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-right: 100px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.contactowapp {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.contactowapp h3 {
+  grid-column: 2/3;
+}
+.contactowapp p {
+  grid-column: 2/3;
+}
+.contactowapp a {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: end;
+}
+.contactowapp .logo-whastapp {
+  width: 50px;
+  height: 50px;
+}
+
+/* CSS PROYECTOS 0-576 */
+.grilla-main2 {
+  background-color: rgba(255, 255, 255, 0.952);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.colornav {
+  background-color: black;
+}
+
+.parrafo-proyecto1-container {
+  align-self: center;
+}
+
+.parrafo-proyecto1 {
+  font-size: 75%;
+}
+
+.imagen-proyecto1-container {
+  margin-top: 10px;
+}
+
+.imagen-proyecto1 {
+  width: 100%;
+  height: 100%;
+}
+
+.parrafo-proyecto2-container {
+  align-self: center;
+  font-size: 75%;
+}
+
+.imagen-proyecto2 {
+  width: 100%;
+  height: 100%;
+}
+
+.parrafo-proyecto3-container {
+  align-self: center;
+  font-size: 75%;
+}
+
+.imagen-proyecto3 {
+  width: 100%;
+  height: 100%;
+}
+
+.parrafo-proyecto4-container {
+  align-self: center;
+  margin-right: 10px;
+  font-size: 75%;
+}
+
+.imagen-proyecto4-container {
+  margin-bottom: 10px;
+}
+
+.imagen-proyecto4 {
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS PROYECTOS 576px */
+@media (min-width: 576px) {
+  .grilla-main2 {
+    background-color: rgba(255, 255, 255, 0.952);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .colornav {
+    background-color: black;
+  }
+  .parrafo-proyecto1-container {
+    align-self: center;
+  }
+  .parrafo-proyecto1 {
+    font-size: 150%;
+  }
+  .imagen-proyecto1-container {
+    margin-top: 10px;
+  }
+  .imagen-proyecto1 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto2-container {
+    align-self: center;
+    font-size: 300%;
+  }
+  .imagen-proyecto2 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto3-container {
+    align-self: center;
+    font-size: 250%;
+  }
+  .imagen-proyecto3 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto4-container {
+    align-self: center;
+    margin-right: 10px;
+    font-size: 175%;
+  }
+  .imagen-proyecto4-container {
+    margin-bottom: 10px;
+  }
+  .imagen-proyecto4 {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* CSS PROYECTOS 1024px*/
+@media (min-width: 1024px) {
+  .grilla-main2 {
+    background-color: rgba(255, 255, 255, 0.952);
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    gap: 10px;
+  }
+  .colornav {
+    background-color: black;
+  }
+  .parrafo-proyecto1-container {
+    align-self: center;
+  }
+  .parrafo-proyecto1 {
+    grid-column: 1/2;
+    font-size: 150%;
+  }
+  .imagen-proyecto1-container {
+    grid-column: 2/5;
+    margin-top: 10px;
+  }
+  .imagen-proyecto1 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto2-container {
+    grid-column: 4/6;
+    grid-row: 2/5;
+    align-self: center;
+    font-size: 300%;
+  }
+  .imagen-proyecto2-container {
+    grid-column: 2/4;
+    grid-row: 2/5;
+  }
+  .imagen-proyecto2 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto3-container {
+    grid-column: 1/3;
+    grid-row: 5/7;
+    align-self: center;
+    font-size: 250%;
+  }
+  .imagen-proyecto3-container {
+    grid-column: 3/5;
+  }
+  .imagen-proyecto3 {
+    width: 100%;
+    height: 100%;
+  }
+  .parrafo-proyecto4-container {
+    grid-column: 5/6;
+    grid-row: 6/8;
+    align-self: center;
+    margin-right: 10px;
+    font-size: 175%;
+  }
+  .imagen-proyecto4-container {
+    grid-column: 2/5;
+    margin-bottom: 10px;
+  }
+  .imagen-proyecto4 {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* CSS CONTACTO 0 - 576*/
+.titulo-contacto {
+  margin-bottom: 20px;
+}
+
+.texto-contacto {
+  margin-bottom: 20px;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-family: "Cooper";
+}
+
+.contact-ubic-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulo-1;
+}
+
+.contacto2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: x-large;
+}
+
+.formulario-ubic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: formulario;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(204, 204, 204);
+  gap: 20px;
+  width: 400px;
+  align-items: center;
+  align-self: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.formulario .formulario h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.formulario .texto-formulario1 {
+  margin: 5px;
+  border-radius: black 5px solid;
+}
+
+.texto-ubicacion {
+  font-family: "Cooper";
+  font-size: x-large;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  grid-area: texto-2;
+}
+
+.mapa-locacion {
+  grid-area: mapa;
+}
+
+.grilla-container-3 {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "titulo-1" "formulario" "texto-2" "mapa";
+}
+
+/* CSS CONTACTO 576 - 1024*/
+@media (min-width: 576px) {
+  .titulo-contacto {
+    margin-bottom: 20px;
+  }
+  .texto-contacto {
+    margin-bottom: 20px;
+  }
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: "Cooper";
+  }
+  .grilla-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+  }
+  .grilla-container-3 .contact-ubic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grilla-container-3 .contacto2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: x-large;
+  }
+  .grilla-container-3 .formulario-ubic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grilla-container-3 .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    gap: 20px;
+    width: 400px;
+    align-items: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grilla-container-3 .formulario .formulario h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .grilla-container-3 .formulario .texto-formulario1 {
+    margin: 5px;
+    border-radius: black 5px solid;
+  }
+  .grilla-container-3 .texto-ubicacion {
+    font-family: "Cooper";
+    font-size: x-large;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+/* CSS CONTACTO 1024*/
+@media (min-width: 1024px) {
+  .titulo-contacto {
+    margin-bottom: 20px;
+  }
+  .texto-contacto {
+    margin-bottom: 20px;
+  }
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: "Cooper";
+  }
+  .grilla-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+  }
+  .grilla-container-3 .contact-ubic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grilla-container-3 .contacto2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: x-large;
+  }
+  .grilla-container-3 .formulario-ubic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grilla-container-3 .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    gap: 20px;
+    width: 400px;
+    align-items: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grilla-container-3 .formulario .formulario h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .grilla-container-3 .formulario .texto-formulario1 {
+    margin: 5px;
+    border-radius: black 5px solid;
+  }
+  .grilla-container-3 .texto-ubicacion {
+    font-family: "Cooper";
+    font-size: x-large;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+/* CSS SERVICIOS 0-500px */
+.intro-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-servicios {
+  font-family: "Helvetica Neue";
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.parrafo-servicios {
+  width: 500px;
+}
+
+.titulo-servicios2 {
+  font-family: "Helvetica Neue";
+  font-size: x-large;
+  margin: 100px;
+}
+
+.grid-container-servicios {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-servicios-1 {
+  grid-column: 1/2;
+}
+
+.textos-subservicios1 {
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.logo-servicios-2-ubic {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.logo-servicios-2 {
+  align-self: center;
+}
+
+.textos-subservicios2 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.logo-servicios-3-ubic {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.textos-subservicios3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+}
+
+.logo-servicios-4-ubic {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  align-self: center;
+}
+
+.textos-subservicios4 {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CSS SERVICIOS 576px */
+@media (min-width: 576px) {
+  .intro-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-servicios {
+    font-family: "Helvetica Neue";
+    font-size: x-large;
+    margin-bottom: 20px;
+  }
+  .parrafo-servicios {
+    width: 500px;
+  }
+  .titulo-servicios2 {
+    font-family: "Helvetica Neue";
+    font-size: x-large;
+    margin: 100px;
+  }
+  .grid-container-servicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-servicios-1 {
+    grid-column: 1/2;
+  }
+  .textos-subservicios1 {
+    grid-column: 2/3;
+    align-self: center;
+  }
+  .logo-servicios-2-ubic {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .logo-servicios-2 {
+    align-self: center;
+  }
+  .textos-subservicios2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    align-self: center;
+  }
+  .logo-servicios-3-ubic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .textos-subservicios3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+  }
+  .logo-servicios-4-ubic {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    align-self: center;
+  }
+  .textos-subservicios4 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    align-self: center;
+  }
+}
+/* CSS SERVICIOS 1024px */
+@media (min-width: 1024px) {
+  .intro-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-servicios {
+    font-family: "Cooper";
+    font-size: x-large;
+    margin-bottom: 20px;
+    font-size: 100px;
+  }
+  .titulo-servicios2 {
+    font-size: x-large;
+    font-family: "Cooper";
+    font-size: 75px;
+  }
+  .parrafo-servicios {
+    width: 500px;
+    font-size: x-large;
+    font-family: "Cooper-Light";
+  }
+  .grid-container-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .logo-servicios-1 {
+    grid-column: 1/2;
+  }
+  .textos-subservicios1 {
+    grid-column: 2/3;
+    align-self: center;
+    font-size: x-large;
+  }
+  .logo-servicios-2-ubic {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .logo-servicios-2 {
+    align-self: center;
+  }
+  .textos-subservicios2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    font-size: x-large;
+  }
+  .logo-servicios-3-ubic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .textos-subservicios3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+    font-size: x-large;
+  }
+  .logo-servicios-4-ubic {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: center;
+  }
+  .textos-subservicios4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: center;
+    font-size: x-large;
+  }
+}
+/* CSS QUIENES SOMOS 0 - 576 */
+.titulo-quienessomos {
+  font-family: "Helvetica";
+  margin-bottom: 50px;
+}
+
+.parrafo-quienessomos {
+  font-family: "Helvetica Neue";
+}
+
+.container-imagenes-qs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 75px;
+}
+
+.img-arqui {
+  width: 25%;
+  height: 25%;
+  border-style: solid black;
+}
+
+/* CSS QUIENES SOMOS 576 - 1024 */
+@media (min-width: 576px) {
+  .titulo-quienessomos {
+    font-family: "Helvetica";
+    margin-bottom: 50px;
+  }
+  .parrafo-quienessomos {
+    font-family: "Helvetica Neue";
+  }
+  .container-imagenes-qs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+  .img-arqui {
+    width: 25%;
+    height: 25%;
+    border-style: solid black;
+  }
+}
+/* CSS QUIENES SOMOS 1024px */
+@media (min-width: 1024px) {
+  .titulo-quienessomos {
+    font-family: "Helvetica";
+    margin-bottom: 50px;
+  }
+  .parrafo-quienessomos {
+    font-family: "Helvetica Neue";
+  }
+  .container-imagenes-qs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+  .img-arqui {
+    width: 25%;
+    height: 25%;
+    border-style: solid black;
+  }
+}/*# sourceMappingURL=estilos.css.map */
