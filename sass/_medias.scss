@@ -133,8 +133,7 @@ main {
 }
 
 .titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
-    color: $color1;
-    font-family: "Cooper";
+   @include titulos-secun
 }
 
 .icon {
@@ -288,8 +287,7 @@ main {
     }
 
     .titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
-        color: black;
-        font-family: "Cooper";
+       @include titulos-secun
     }
 
 
@@ -476,8 +474,7 @@ main {
 
 
     .titulo-secun1 .titulo-secun2 .titulo-secun3 .titulo-secun4 {
-        color: black;
-        font-family: "Cooper";
+     @include titulos-secun
     }
 
     .animacion:hover {
