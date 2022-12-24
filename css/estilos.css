@@ -271,7 +271,7 @@ li {
     font-family: "Cooper";
   }
   .animacion:hover {
-    transform: scale(3);
+    transform: scale(2);
   }
   .icon {
     width: 50px;
@@ -412,7 +412,7 @@ li {
     font-family: "Cooper";
   }
   .animacion:hover {
-    transform: scale(3);
+    transform: scale(2);
   }
   .icon {
     width: 50px;
@@ -689,13 +689,16 @@ li {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.formulario .formulario h4 {
+.formulario .titulo-formulario {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 .formulario .texto-formulario1 {
   margin: 5px;
   border-radius: black 5px solid;
+}
+.formulario .enviar {
+  margin-bottom: 15px;
 }
 
 .texto-ubicacion {
@@ -762,13 +765,16 @@ li {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .grilla-container-3 .formulario .formulario h4 {
+  .grilla-container-3 .formulario .titulo-formulario {
     margin-bottom: 10px;
     margin-top: 10px;
   }
   .grilla-container-3 .formulario .texto-formulario1 {
     margin: 5px;
     border-radius: black 5px solid;
+  }
+  .grilla-container-3 .formulario .enviar {
+    margin-bottom: 15px;
   }
   .grilla-container-3 .texto-ubicacion {
     font-family: "Cooper";
@@ -823,13 +829,16 @@ li {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .grilla-container-3 .formulario .formulario h4 {
+  .grilla-container-3 .formulario .titulo-formulario {
     margin-bottom: 10px;
     margin-top: 10px;
   }
   .grilla-container-3 .formulario .texto-formulario1 {
     margin: 5px;
     border-radius: black 5px solid;
+  }
+  .grilla-container-3 .formulario .enviar {
+    margin-bottom: 15px;
   }
   .grilla-container-3 .texto-ubicacion {
     font-family: "Cooper";
@@ -846,8 +855,8 @@ li {
 }
 
 .titulo-servicios {
-  font-family: "Helvetica Neue";
-  font-size: x-large;
+  font-family: "Cooper";
+  font-size: small;
   margin-bottom: 20px;
 }
 
@@ -856,8 +865,8 @@ li {
 }
 
 .titulo-servicios2 {
-  font-family: "Helvetica Neue";
-  font-size: x-large;
+  font-family: "Cooper";
+  font-size: 25px;
   margin: 100px;
 }
 
@@ -921,16 +930,16 @@ li {
     align-items: center;
   }
   .titulo-servicios {
-    font-family: "Helvetica Neue";
-    font-size: x-large;
+    font-family: "Cooper";
+    font-size: 75px;
     margin-bottom: 20px;
   }
   .parrafo-servicios {
     width: 500px;
   }
   .titulo-servicios2 {
-    font-family: "Helvetica Neue";
-    font-size: x-large;
+    font-family: "Cooper";
+    font-size: 75px;
     margin: 100px;
   }
   .grid-container-servicios {
@@ -985,12 +994,12 @@ li {
   }
   .titulo-servicios {
     font-family: "Cooper";
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 20px;
     font-size: 100px;
   }
   .titulo-servicios2 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Cooper";
     font-size: 75px;
   }
